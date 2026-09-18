@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Report an Animal - Pawvia</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="page-header">
+
+        <div class="logo">
+            🐾 Pawvia
+        </div>
+
+        <h2>
+            Report an Animal
+        </h2>
+
+    </header>
+
+
+
+    <!-- FORM -->
+
+    <main class="form-container">
+
+        <h1>
+            🚨 Report an Animal
+        </h1>
+
+        <p class="form-description">
+
+            Your report can help an animal receive help faster.
+
+        </p>
+
+
+
+        <form id="reportForm">
+
+
+            <!-- CONDITION -->
+
+            <label for="condition">
+
+                What happened?
+
+            </label>
+
+
+            <select id="condition" required>
+
+                <option value="">
+                    Select an option
+                </option>
+
+                <option value="Injured">
+                    🩹 Injured
+                </option>
+
+                <option value="Dead">
+                    ⚠️ Dead
+                </option>
+
+                <option value="Abandoned">
+                    🏠 Abandoned
+                </option>
+
+            </select>
+
+
+
+            <!-- ANIMAL TYPE -->
+
+            <label for="animalType">
+
+                Animal Type
+
+            </label>
+
+
+            <input
+                type="text"
+                id="animalType"
+                placeholder="Example: Dog, Cat, Cow..."
+                required
+            >
+
+
+
+            <!-- LOCATION -->
+
+            <label>
+
+                Location
+
+            </label>
+
+
+            <div class="location-row">
+
+                <input
+                    type="text"
+                    id="reportLocation"
+                    placeholder="Enter location manually"
+                >
+
+
+                <button
+                    type="button"
+                    class="location-button"
+                    onclick="getReportLocation()"
+                >
+
+                    📍 Use My Location
+
+                </button>
+
+            </div>
+
+
+            <p id="reportLocationStatus"></p>
+
+
+
+            <!-- IMAGE -->
+
+            <label for="animalImage">
+
+                📷 Camera / Upload Image
+
+            <!-- IMAGE UPLOAD -->
+
+<label>
+    📷 Animal Image
+</label>
+
+<div class="image-upload-box">
+
+    <input
+        type="file"
+        id="animalImage"
+        accept="image/*"
+        capture="environment"
+        required
+    >
+
+    <label for="animalImage" class="image-upload-button">
+
+        📷 Click / Upload Image
+
+    </label>
+
+    <p id="imageName">
+        Take a photo or select an image
+    </p>
+
+</div>
+
+
+
+            <!-- NAME -->
+
+            <label for="reporterName">
+
+                Your Name
+
+            </label>
+
+
+            <input
+                type="text"
+                id="reporterName"
+                placeholder="Enter your name"
+                required
+            >
+
+
+
+            <!-- PHONE -->
+
+            <label for="reporterPhone">
+
+                Phone Number
+
+            </label>
+
+
+            <input
+                type="tel"
+                id="reporterPhone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="submit-button"
+            >
+
+                🚨 Submit Report
+
+            </button>
+
+</form>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+</body>
+
+</html>

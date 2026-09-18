@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Find Animal Services - Pawvia</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="page-header">
+
+        <div class="logo">
+            🐾 Pawvia
+        </div>
+
+        <div>
+
+            <h2>
+                Animal Services
+            </h2>
+
+            <p>
+                Hospitals & Pet Stores Near You
+            </p>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- FILTER -->
+
+    <main class="services-container">
+
+
+        <div class="filter-card">
+
+            <h2>
+                📍 Find Services
+            </h2>
+
+
+            <!-- CURRENT LOCATION -->
+
+            <button
+                class="location-button full-button"
+                onclick="useServiceLocation()"
+            >
+
+                📍 Use My Current Location
+
+            </button>
+
+
+            <p id="serviceLocationStatus"></p>
+
+
+
+            <!-- STATE -->
+
+            <label for="state">
+
+                State
+
+            </label>
+
+
+            <select id="state">
+
+                <option value="">
+                    Select State
+                </option>
+
+                <option value="Meghalaya">
+                    Meghalaya
+                </option>
+
+                <option value="Manipur">
+                    Manipur
+                </option>
+
+                <option value="Assam">
+                    Assam
+                </option>
+
+            </select>
+
+
+
+            <!-- CITY -->
+
+            <label for="city">
+
+                City
+
+            </label>
+
+
+            <select id="city">
+
+                <option value="">
+                    Select City
+                </option>
+
+            </select>
+
+
+
+            <!-- TYPE -->
+
+            <label for="serviceType">
+
+                What are you looking for?
+
+            </label>
+
+
+            <select id="serviceType">
+
+                <option value="All">
+                    All
+                </option>
+
+                <option value="Hospital">
+                    🏥 Animal Hospitals
+                </option>
+
+                <option value="Pet Store">
+                    🛍️ Pet Stores
+                </option>
+
+            </select>
+
+
+
+            <!-- SEARCH -->
+
+            <button
+                class="submit-button"
+                onclick="findServices()"
+            >
+
+                🔎 Search
+
+            </button>
+
+        </div>
+
+
+
+        <!-- RESULTS -->
+
+        <section id="serviceResults">
+
+            <div class="no-results">
+
+                Select your state and city
+                to find nearby services.
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
